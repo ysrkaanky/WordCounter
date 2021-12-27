@@ -1,0 +1,97 @@
+:root {
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 10px;
+   --headerColor: #d0cee0;
+}
+
+h1 {
+   font-size: 4.6rem;
+   margin: 1.25ex 0 0 0;
+   text-align: center;
+   font-weight: 700;
+}
+
+h2 {
+   text-align: center;
+   font-size: 3.68rem;
+   font-weight: 300;
+}
+
+p {
+   font-size: 1.6rem;
+}
+
+body {
+   margin: 0;
+}
+
+.header {
+   width: 100%;
+   background-color: #0f1f36;
+}
+
+.header-container {
+   width: 100%;
+   color: var(--headerColor);
+   overflow: hidden;
+}
+
+.main {
+   width: 90%;
+   margin: 0 auto;
+   max-width: 1200px;
+}
+
+.textarea-container {
+   padding: 10ex 0 0 0;
+   width: 100%;
+}
+
+textarea {
+   resize: vertical;
+   padding: 1ch;
+   font-family: monospace;
+   font-size: 1.6rem !important;
+   width: 100%;
+}
+
+.textareaEl {
+   min-height: 300px;
+}
+
+.buttonsContainer {
+   margin: 1.5ch;
+}
+
+.buttonswrapper {
+   margin: 0 0 0 auto;
+   width: fit-content
+}
+
+.bttn {
+   font-size: 2rem;
+   padding: 0.5ex 1ch;
+   border: 3px inset #a8a8a8;
+   cursor: pointer;
+   transition: transform .2s;
+   border-radius: 8px;
+   font-weight: 500;
+}
+
+.bttn-mr {
+   margin-right: 1ch;
+}
+
+.bttn:active {
+   border: 3px outset #a8a8a8;
+   transform: translateX(1px) translateY(2px);
+}
+
+.results {
+   width: 100%;
+}
+
+.resultsTA {
+   height: 13ex;
+   margin-bottom: 3ex;
+}
