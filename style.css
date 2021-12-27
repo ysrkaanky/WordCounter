@@ -57,10 +57,11 @@ textarea {
 
 .textareaEl {
    min-height: 300px;
+   box-sizing: border-box;
 }
 
 .buttonsContainer {
-   margin: 1.5ch;
+   margin: 1.5ch 0;
 }
 
 .buttonswrapper {
@@ -93,5 +94,6 @@ textarea {
 
 .resultsTA {
    height: 13ex;
+   box-sizing: border-box;
    margin-bottom: 3ex;
 }
