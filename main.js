@@ -6,7 +6,8 @@ function counter() {
    wordCounter = whiteSpaceless.split(" ");
    l = text == "" ? 0 : wordCounter.length;
    $("#WC").text(`${l} words`);
-   $("#WWSLC").text(`${whiteSpaceless.length} letters`);
+   let withoutSpaces = whiteSpaceless.replace(" ","");
+   $("#WWSLC").text(`${withoutSpaces.length} letters`);
 }
 
 $("#text_area").on("keyup  propertychange paste change", function () {
