@@ -6,14 +6,13 @@ function counter() {
    wordCounter = whiteSpaceless.split(" ");
    l = text == "" ? 0 : wordCounter.length;
    $("#WC").text(`${l} words`);
-   let withoutSpaces = whiteSpaceless.replace(" ","");
+   let withoutSpaces = whiteSpaceless.replaceAll(" ","");
    $("#WWSLC").text(`${withoutSpaces.length} letters`);
 }
 
 $("#text_area").on("keyup  propertychange paste change", function () {
    let text = $("#text_area").val();
    window.whiteSpaceless = text.replace(/\s+/g, ' ').trim();
-   console.log("test");
 });
 
 function minifier() {
